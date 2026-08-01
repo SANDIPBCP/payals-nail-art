@@ -13,12 +13,10 @@ body{
 
 .header-banner{
     background:url("PAYAL'S_20250912_161755_0000.jpg") center center/cover no-repeat;
-    height:300px;
-    position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
+    no-repeat center 20%;
+    background-size: cover;
+    height: 170px;
+    position: relative;
 }
 
 .header-overlay{
