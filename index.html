@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAYAL'S Nail Art Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <div id="loader">
+    <div class="loader-box">
+        💅
+        <h2>PAYAL'S Nail Art Studio</h2>
+        <p>Loading...</p>
+    </div>
+</div>
+
+<header>
+
+    <h1>💅 PAYAL'S Nail Art Studio</h1>
+    <p>Beautiful Nails, Beautiful You</p>
+<div class="theme-icon" onclick="toggleTheme()">
+    🌙
+</div>
+</header>
+<nav>
+    <button onclick="goTo('top')">🏠 Home</button>
+    <button onclick="goTo('services')">💅 Services</button>
+    <button onclick="goTo('gallery')">📸 Gallery</button>
+    <button onclick="goTo('booking')">📅 Booking</button>
+    <button onclick="goTo('contact')">📞 Contact</button>
+</nav>
+<section class="hero-slider">
+
+    <img class="slide active"
+    src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900">
+
+    <img class="slide"
+    src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=900">
+
+    <img class="slide"
+    src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=900">
+
+</section>
+
+<section class="hero animate">
+    <h2>Welcome</h2>
+   <p style="color:#666;">
+    Professional Nail Art & Beauty Services
+</p>
+
+    <a class="btn" href="https://wa.me/919851393449">
+        Book on WhatsApp
+    </a>
+</section>
+
+<section class="services animate" id="services">
+    <h2>Our Services</h2>
+
+    <div class="card">✨ Nail Art</div>
+
+    <div class="card">💅 Gel Polish</div>
+
+    <div class="card">🌸 Manicure</div>
+
+    <div class="card">👣 Pedicure</div>
+
+</section>
+
+<section class="gallery animate" id="gallery">
+    <h2>Our Gallery</h2>
+
+    <div class="gallery-grid">
+        <img src="https://picsum.photos/300/300?1" alt="Nail Art 1">
+        <img src="https://picsum.photos/300/300?2" alt="Nail Art 2">
+        <img src="https://picsum.photos/300/300?3" alt="Nail Art 3">
+        <img src="https://picsum.photos/300/300?4" alt="Nail Art 4">
+    </div>
+</section>
+<div id="popup" class="popup" onclick="closePopup()">
+
+    <button class="prev" onclick="prevImage(event)">❮</button>
+
+    <img id="popupImg">
+
+    <button class="next" onclick="nextImage(event)">❯</button>
+
+</div>
+<section class="booking animate" id="booking">
+    <h2>Book Appointment</h2>
+
+    <form>
+      <input type="text" id="name" placeholder="Your Name" required>
+
+<input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+<input type="date" id="date" required>
+
+<select id="service" required>
+    <option>Nail Art</option>
+    <option>Gel Polish</option>
+    <option>Manicure</option>
+    <option>Pedicure</option>
+</select>
+
+<button type="button" onclick="bookNow()">
+    Book Now
+</button>
+       </form>
+</section>
+<section class="price animate">
+    <h2>Price List</h2>
+
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>✨ Nail Art</td>
+            <td>₹299</td>
+        </tr>
+
+        <tr>
+            <td>💅 Gel Polish</td>
+            <td>₹299</td>
+        </tr>
+
+        <tr>
+            <td>🌸 Manicure</td>
+            <td>Not Available</td>
+        </tr>
+
+        <tr>
+            <td>👣 Pedicure</td>
+            <td>Not Available</td>
+        </tr>
+    </table>
+</section>
+<section class="about animate">>
+    <h2>About Us</h2>
+
+    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600" alt="Studio">
+
+    <p>
+        Welcome to <b>PAYAL'S Nail Art Studio</b>.
+        We specialize in beautiful nail art, gel polish,
+        manicure and pedicure services.
+        Our goal is to make every client feel confident and beautiful.
+    </p>
+</section>
+<section class="reviews animate">
+    <h2>Customer Reviews</h2>
+
+    <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>"Amazing Nail Art! Highly Recommended."</p>
+        <h4>- Priya</h4>
+    </div>
+
+    <div class="review-card">
+        ⭐⭐⭐⭐⭐
+        <p>"Very Professional Service & Beautiful Designs."</p>
+        <h4>- Riya</h4>
+    </div>
+</section>
+<section class="contact animate" id="contact">
+    <h2>Contact Us</h2>
+
+    <p>📍 Tungidighi, West Bengal</p>
+    <p>📞 +91 XXXXXXXXXX</p>
+    <p>📧 payalsnailart@gmail.com</p>
+
+    <iframe
+        src="https://maps.google.com/maps?q=Raiganj&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="250"
+        style="border:0;border-radius:15px;"
+        loading="lazy">
+    </iframe>
+</section>
+<section class="faq animate">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <h3>💅 Do I need an appointment?</h3>
+        <p>Yes, we recommend booking your appointment in advance.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>⏰ What are your opening hours?</h3>
+        <p>Monday - Sunday : 10:00 AM - 8:00 PM</p>
+    </div>
+
+    <div class="faq-item">
+        <h3>💳 Do you accept online payments?</h3>
+        <p>Yes, we accept UPI, PhonePe, Google Pay and Cash.</p>
+    </div>
+</section>
+<footer>
+    © 2026 PAYAL'S Nail Art Studio <br>
+    📞 +91 XXXXXXXXXX
+</footer>
+<a href="https://wa.me/919851393449" class="whatsapp">
+    💬
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
