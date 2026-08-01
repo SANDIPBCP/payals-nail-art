@@ -11,9 +11,9 @@ body{
     text-align:center;
 }
 
-.header-banner{
-    background:url("PAYAL'S_20250912_161755_0000.jpg") center center/cover no-repeat;
-    height: 150px;
+header{
+    background: url("PAYAL'S_20250912_161755_0000.jpg") center center/cover no-repeat;
+    height: 170px;
     position: relative;
     overflow: hidden;
 }
@@ -21,34 +21,38 @@ body{
 .header-overlay{
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.50);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
+    color: white;
     padding: 10px;
 }
 
 .header-overlay h1{
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: 800;
+    color: #FFD700;
     margin: 0;
-    text-shadow: 2px 2px 6px rgba(0,0,0,.7);
+    text-shadow: 3px 3px 8px #000;
 }
 
 .header-overlay p{
-    font-size: 14px;
-    margin-top: 5px;
-    text-shadow: 2px 2px 6px rgba(0,0,0,.7);
+    font-size: 17px;
+    color: #ffffff;
+    margin-top: 8px;
+    text-shadow: 2px 2px 6px #000;
+    font-weight: bold;
 }
 
 .theme-icon{
     position: absolute;
-    top: 10px;
+    top: 12px;
     right: 15px;
     font-size: 28px;
+    z-index: 10;
 }
 
 .hero{
